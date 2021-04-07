@@ -1,0 +1,36 @@
+.anchor-image {
+  display: block;
+  z-index: 100;
+  right: 10px;
+  position: absolute;
+}
+
+.tab-elements {
+  visibility: hidden;
+}
+
+.anchor-href:hover {
+  font-weight: 700;
+}
+
+.anchor-href {
+  font-weight: 500;
+}
+
+.close-button{
+    width: 30px;
+    height: 30px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.link-button {
+  width: 40px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+  .tab-button:focus {
+    box-shadow: none;
+    outline:none;
+  }

@@ -1,0 +1,21 @@
+<div class="contact-tab shivam-border-color">
+<button class="btn w-100" type="button" data-toggle="collapse" [attr.data-target]="'#'+data.collapseId"
+   aria-expanded="false" [attr.aria-controls]="data.collapseId">
+   <img *ngIf='data?.expansionButton?.buttonImage?.imageUrl' [src]="data.expansionButton.buttonImage.imageUrl"
+     [attr.height]='data.expansionButton.buttonImage?.height' [alt]="data.expansionButton.buttonImage?.altText">
+   {{data.expansionButton.buttonText}}
+ </button>
+</div>
+ <div class="collapse px-3" [id]="data.collapseId">
+   <img *ngIf='data?.cardImage?.imageUrl' [src]="data.cardImage.imageUrl" class="card-img-top"
+     [alt]="data.cardImage?.altText" [attr.height]='data.cardImage?.height'>
+   <app-list-accordion [data]="data.accordion"></app-list-accordion>
+   <div *ngIf="data?.cardText || data?.link" class="card card-body shivam-bg shivam-border-colour my-1">
+     <span *ngIf="data?.cardText">{{data.cardText}}</span>
+     <a *ngIf='data?.link' [href]="data.link.anchorUrl" [target]='data.link.target'
+       class='text-white anchor-container font-weight-bold'>{{data.link.linkText}}
+       <img *ngIf='data?.launchImage?.imageUrl' [src]="data.launchImage.imageUrl" class="card-launch"
+         [alt]="data.launchImage?.altText" [attr.height]='data.launchImage?.height'>
+     </a>
+   </div>
+ </div>

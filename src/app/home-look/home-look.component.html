@@ -1,0 +1,11 @@
+<div class='home shivam-bg'></div>
+<ng-container *ngFor="let icons of data.headerIcons; let i = index">
+  <app-header-icon [data]="icons" [count]="i"></app-header-icon>
+</ng-container>
+<div class="container content">
+  <div class="logo">
+    <img *ngIf="data.logoImage.imageUrl" [src]="data.logoImage.imageUrl" [alt]="data.logoImage.altText"
+      class="logo-image">
+  </div>
+  <div class="h1 text-center shivam-color name-title pb-5 ">{{data.name}}</div>
+</div>

@@ -1,0 +1,63 @@
+<div class="container mb-5">
+  <div class='row pt-2 px-1'>
+    <nav id="navbar-desktop" *ngIf="!(isMobile)"
+      class="navbar-light navbar-inverse navbar-fixed-top list-group list-group-flush 
+        col-lg-2 col-xl-2 d-none d-xl-block d-lg-block">
+      <div class="sticky-top z-index-3 col-12">
+        <ul class="nav nav-pills">
+          <li class="w-100">
+            <a class='shivam-color  text-decoration-none pt-1 mb-1 ' href="/main">
+              <div class="shivam-border-color w-100 text-center font-weight-bold name-plate">
+                <span class='name'>SHIVAM KUMAR GIRI</span><br />
+                <span class='designation'>DESIGNER AND DEVELOPER</span>
+              </div>
+            </a>
+          </li>
+          <li type="button" class="list-group-item list-group-item-action nav-item"><a class="nav-link"
+             (click)="navigateUrl('timeline', $event)" href="#timeline">Timeline</a></li>
+          <li type="button" class="list-group-item list-group-item-action nav-item"><a class="nav-link"
+             (click)="navigateUrl('hobbies', $event)" href="#hobbies">Hobbies</a></li>
+          <li type="button" class="list-group-item list-group-item-action nav-item"><a class="nav-link"
+             (click)="navigateUrl('achievement', $event)" href="#achievement">Achievement</a></li>
+          <li type="button" class="list-group-item list-group-item-action nav-item"><a class="nav-link"
+             (click)="navigateUrl('contact', $event)" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav> 
+    <nav id="navbar-desktop" *ngIf="isMobile"
+      class="navbar-light navbar-inverse navbar-fixed-top list-group list-group-flush col-md-12 col-sm-12 d-xl-none d-lg-none">
+      <div class="container position-fixed mobile-navbar z-index-3  bg-white">
+        <a class='shivam-color text-decoration-none py-2 mb-1' href="/main">
+          <div class="shivam-border-color w-100 text-center font-weight-bold name-plate">
+            <span class='name'>SHIVAM KUMAR GIRI</span><br />
+            <span class='designation'>DESIGNER AND DEVELOPER</span>
+          </div>
+        </a>
+        <ul class="nav nav-pills mobile-ul">
+          <li type="button" class="nav-item"><a class="nav-link px-2 shivam-border-color navbar-link"
+             (click)="navigateUrl('timeline', $event)" href="#timeline">Timeline</a> </li>
+          <li type="button" class="nav-item"><a class="nav-link px-2 shivam-border-color navbar-link"
+             (click)="navigateUrl('hobbies', $event)" href="#hobbies">Hobbies</a></li>
+          <li type="button" class="nav-item"><a class="nav-link px-2 shivam-border-color navbar-link"
+             (click)="navigateUrl('achievement', $event)" href="#achievement">Achievement</a></li>
+          <li type="button" class="nav-item"><a class="nav-link px-2 shivam-border-color navbar-link"
+             (click)="navigateUrl('contact', $event)" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <body data-spy="scroll" data-target="#navbar-desktop" data-offset="100" tabindex="0"
+      class='col-md-12 col-lg-10 col-xl-10 col-sm-12 nav-body'>
+      <div class='my-3'>
+        <app-title-bar id="timeline" data='TIMELINE'></app-title-bar>
+        <app-timeline></app-timeline>
+        <app-title-bar id="hobbies" data='HOBBIES'></app-title-bar>
+        <app-list-accordion [data]="data"></app-list-accordion>
+        <app-title-bar id="achievement" data='ACHIEVEMENT'></app-title-bar>
+        <app-corousel></app-corousel>
+        <app-title-bar id="contact" data='CONTACT'></app-title-bar>
+        <app-horz-tab></app-horz-tab>
+      </div>
+    </body>
+  </div>
+</div>

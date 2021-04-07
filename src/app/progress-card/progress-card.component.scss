@@ -1,0 +1,23 @@
+.progress {
+  transform: skewX(-18deg);
+  position: absolute;
+  height: 50px;
+  z-index: 1;
+}
+.rect {
+  position: absolute;
+  height: 50px;
+  z-index: 1;
+  margin-left:-1rem;
+}
+
+.progress-right{
+transform: skewX(18deg);
+position: absolute;
+height: 50px;
+z-index: 1;
+}
+
+.title-text{
+    z-index:5 ;
+}

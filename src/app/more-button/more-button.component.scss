@@ -1,0 +1,38 @@
+.button-image {
+  height: 50px;
+  width: 50px;
+  border: none;
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  border-radius: 25px;
+  padding:0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 5000;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.more-button {
+  background-image: url('/assets/Shivam-button-Logo.png');
+
+  &:hover {
+    background-image: url('/assets/more.png');
+  }
+
+  &:focus {
+    outline: 0;
+  }
+}
+
+.back-button {
+  background-image: url('/assets/Shivam-button-Logo.png');
+
+  &:hover {
+    background-image: url('/assets/back.png');
+  }
+
+  &:focus {
+    outline: 0;
+  }
+}

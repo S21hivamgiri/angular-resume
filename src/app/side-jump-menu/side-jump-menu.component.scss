@@ -1,0 +1,50 @@
+.list-group-item.active {
+  background-color: #002060;
+}
+
+.nav-link.active {
+  background-color: #002060;
+  border-radius: 0;
+}
+
+.nav-fill {
+  color: white;
+}
+
+.list-group-item {
+  border-top: 0;
+  border-bottom: 0;
+  clear: both;
+}
+
+.name-plate {
+  border: 4px solid;
+  border-radius: 12px;
+}
+
+.navbar-link {
+  border-left: 4px solid;
+  border-radius: 0;
+}
+
+.nav-body {
+  margin-top: 80px;
+}
+
+.designation {
+  font-size: 12px;
+}
+
+.mobile-navbar {
+  top: 0;
+  z-index: 4000;
+}
+
+.mobile-ul {
+  display: flex;
+  justify-content: center;
+
+  .nav-link {
+    font-size: 14px;
+  }
+}

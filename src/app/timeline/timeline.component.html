@@ -1,0 +1,38 @@
+<section id="cd-timeline" class="cd-container mt-5">
+  <ng-container *ngIf="data.timeLineElements.length">
+    <ng-container *ngFor="let list of data.timeLineElements">
+      <div class="cd-timeline-block">
+        <div class="cd-timeline-img bg-white cd-picture">
+          <img *ngIf="data.timelineImage" [src]="data.timelineImage.imageUrl" [alt]="data.timelineImage.altText"
+            [attr.height]="data.timelineImage.height" (click)="hideContent(list.id)">
+        </div>
+        <div class="cd-timeline-content d-block" [id]="list.id">
+          <span class="cd-date py-2 px-3 shivam-bg font-weight-bold p-2">{{list.date}}</span>
+          <h3 class="text-white font-weight-bolder mt-4 mb-2" [innerHTML]="list.designation"></h3>
+          <div class="timeline-content-info">
+            <span *ngIf="list.institute" class="timeline-content-info-title shivam-color py-2">
+              <img *ngIf="data.instituteImage" [src]="data.instituteImage.imageUrl" [alt]="data.instituteImage.altText"
+                [attr.height]="data.instituteImage.height">
+              {{list.institute}}
+            </span>
+            <span *ngIf="list.duration" class="timeline-content-info-date shivam-color py-2">
+              {{list.duration}}
+              <img *ngIf="data.dateImage" [src]="data.dateImage.imageUrl" [alt]="data.dateImage.altText"
+                [attr.height]="data.dateImage.height">
+            </span>
+          </div>
+          <div class="content d-flex">
+            <p class="text-white pt-1 pl-1 font-weight-light mt-4" [innerHTML]="list.content.name"></p>
+            <img class="pt-1 ml-4  mt-4" *ngIf="list.content.logoImage" [src]="list.content.logoImage.imageUrl"
+              [alt]="list.content.logoImage.altText" [attr.height]="list.content.logoImage.height">
+          </div>
+          <ul class="content-skills p-0">
+            <ng-container *ngFor="let skill of list.skills">
+              <li>{{skill}}</li>
+            </ng-container>
+          </ul>
+        </div>
+      </div>
+    </ng-container>
+  </ng-container>
+</section>
