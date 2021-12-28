@@ -1,5 +1,5 @@
 # Angular Resume of Shivam Kumar Giri
-
+This Project is basic version of my resume as fullStack Javascript Engineer.
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.7.
 
 ## Development server
