@@ -1,0 +1,15 @@
+.data-set {
+    border-bottom: 5px solid;
+    border-radius: 10px;
+
+    .image {
+        border: 5px solid;
+        border-bottom:0;
+        border-radius: 10px;
+        flex: 33%;
+    }
+
+    .chip-bar {
+        flex: 66%;
+    }
+}

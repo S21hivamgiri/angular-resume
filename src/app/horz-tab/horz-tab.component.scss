@@ -1,23 +1,33 @@
-.main-ul{
-    border-bottom: 3px solid;
-    border-top: 3px solid ;
+.main-ul {
+  border-bottom: 3px solid;
+  border-top: 3px solid;
 }
 
-.nav-link.active{
-border-radius: 0px;
-background-color: #002060;
+.nav-link.active {
+  background-color: #002060;
+  border-radius: 0px;
 }
 
 .border-bottom-blue {
-border-bottom: 3px solid;
+  border-bottom: 3px solid;
 }
 
-.resume{
-  display: flex;
-  color:white; 
+.resume-anchor {
+  text-decoration: none;
+
+  .resume {
+    color: white;
+    display: flex;
+
+    &:hover {
+      background-color: #0038a7;
+      transform: scale(1.02);
+    }
+  }
 }
 
 .contact-tab {
-   &> a{
-  text-decoration: none;
-}}
+  &>a {
+    text-decoration: none;
+  }
+}

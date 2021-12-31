@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { Router, NavigationEnd } from '@angular/router';
 import { filter } from 'rxjs/operators';
 
@@ -7,17 +7,9 @@ import { filter } from 'rxjs/operators';
   templateUrl: './more-button.component.html',
   styleUrls: ['./more-button.component.scss']
 })
-export class MoreButtonComponent implements OnInit {
-
-  openPage() {
-    if (this.buttonClass === "more-button") {
-      this.router.navigate(['/main']);
-    } else {
-      this.router.navigate(['/']);
-    }
-  }
-
+export class MoreButtonComponent {
   buttonClass: string;
+  
   constructor(private router: Router) {
     router.events.pipe(filter(e => e instanceof NavigationEnd))
       .subscribe(e => {
@@ -27,10 +19,13 @@ export class MoreButtonComponent implements OnInit {
           this.buttonClass = "more-button"
         }
       });
-   }
-
-  ngOnInit(): void {
-    
   }
 
+  openPage() {
+    if (this.buttonClass === "more-button") {
+      this.router.navigate(['/main']);
+    } else {
+      this.router.navigate(['/']);
+    }
+  }
 }

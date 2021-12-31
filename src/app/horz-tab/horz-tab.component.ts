@@ -1,5 +1,4 @@
-import { Component, OnInit } from '@angular/core';
-import { dropboxCombo } from '../constant';
+import { Component } from '@angular/core';
 import { CONTACT_DATA } from '../data';
 
 @Component({
@@ -7,11 +6,6 @@ import { CONTACT_DATA } from '../data';
   templateUrl: './horz-tab.component.html',
   styleUrls: ['./horz-tab.component.scss']
 })
-export class HorzTabComponent implements OnInit {
-  contactData: dropboxCombo = CONTACT_DATA;
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
+export class HorzTabComponent {
+  contactData = CONTACT_DATA;
 }

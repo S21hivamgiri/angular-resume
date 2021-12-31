@@ -14,11 +14,13 @@
     <div class="row progress-div mt-4">
       <div class="col-md-3 col-lg-3 col-xl-3 col-sm-3 p-0">
         <img [src]='data.progressImage.imageUrl' alt='data.progressImage.altText'
-          [attr.height]='data.progressImage.height'></div>
+          [attr.height]='data.progressImage.height'>
+      </div>
       <div class="col-md-9 col-lg-9 col-xl-9 col-sm-9 p-0">
         <div class="row">
           <div class="col-md-8 col-lg-8 col-xl-8 col-sm-8 shivam-color font-weight-bold">Overall Skill:</div>
-          <div class="col-md-4 col-lg-4 col-xl-4 col-sm-4 shivam-color text-right font-weight-bold">{{data.score}}/5</div>
+          <div class="col-md-4 col-lg-4 col-xl-4 col-sm-4 shivam-color text-right font-weight-bold">{{data.score}}/5
+          </div>
           <div class="col-12">
             <app-horizontal-chart [score]='data.score'></app-horizontal-chart>
           </div>

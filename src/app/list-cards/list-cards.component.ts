@@ -1,6 +1,6 @@
 import { Component, Input } from '@angular/core';
+import { Listcard } from '../constant';
 
-import { Listcard, Accordion } from '../constant';
 @Component({
   selector: 'app-list-cards',
   templateUrl: './list-cards.component.html',
@@ -9,6 +9,4 @@ import { Listcard, Accordion } from '../constant';
 export class ListCardsComponent {
   @Input() data: Listcard;
   @Input() parentId: 'string';
-  constructor() {
-   }
 }

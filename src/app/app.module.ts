@@ -23,6 +23,8 @@ import { TitleBarComponent } from './title-bar/title-bar.component';
 import { HeaderComponent } from './header/header.component';
 import { SkillComponent } from './skill/skill.component';
 import { HeaderIconComponent } from './header-icon/header-icon.component';
+import { TitleSvgComponent } from './title-svg/title-svg.component';
+import { AchievementComponent } from './achievement/achievement.component';
 
 @NgModule({
   declarations: [
@@ -47,6 +49,8 @@ import { HeaderIconComponent } from './header-icon/header-icon.component';
     HeaderComponent,
     SkillComponent,
     HeaderIconComponent,
+    TitleSvgComponent,
+    AchievementComponent
   ],
   imports: [
     BrowserModule,

@@ -1,8 +1,8 @@
 .anchor-image {
   display: block;
-  z-index: 100;
-  right: 10px;
   position: absolute;
+  right: 10px;
+  z-index: 100;
 }
 
 .tab-elements {
@@ -17,20 +17,20 @@
   font-weight: 500;
 }
 
-.close-button{
-    width: 30px;
-    height: 30px;
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
+.close-button {
+  border-bottom-left-radius: 20px;
+  border-top-left-radius: 20px;
+  height: 30px;
+  width: 30px;
 }
 
 .link-button {
-  width: 40px;
-  border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
+  border-top-right-radius: 20px;
+  width: 40px;
 }
 
-  .tab-button:focus {
-    box-shadow: none;
-    outline:none;
-  }
+.tab-button:focus {
+  box-shadow: none;
+  outline: none;
+}

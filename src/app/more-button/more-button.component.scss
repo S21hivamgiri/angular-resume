@@ -1,16 +1,16 @@
 .button-image {
-  height: 50px;
-  width: 50px;
-  border: none;
-  position: fixed;
-  bottom: 15px;
-  right: 15px;
-  border-radius: 25px;
-  padding:0;
+  background-color: rgba(255, 255, 255, 0.3);
   background-repeat: no-repeat;
   background-size: cover;
+  border: none;
+  border-radius: 25px;
+  bottom: 15px;
+  height: 50px;
+  padding: 0;
+  position: fixed;
+  right: 15px;
+  width: 50px;
   z-index: 5000;
-  background-color: rgba(255, 255, 255, 0.3);
 }
 
 .more-button {

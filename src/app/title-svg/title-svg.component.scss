@@ -1,0 +1,99 @@
+.evaporate-animation {
+    animation: dash 8s linear infinite forwards;
+    stroke-dasharray: 100;
+}
+
+.animate {
+    animation: dashfill 20s linear infinite forwards;
+    opacity: 0;
+
+    &.g-2 {
+        animation-delay: 1s;
+    }
+
+    &.g-3 {
+        animation-delay: 2s;
+    }
+
+    &.g-4 {
+        animation-delay: 3s;
+    }
+
+    &.g-5 {
+        animation-delay: 4s;
+    }
+
+    &.g-6 {
+        animation-delay: 5s;
+    }
+
+    &.g-7 {
+        animation-delay: 6s;
+    }
+
+    &.g-8 {
+        animation-delay: 7s;
+    }
+
+    &.g-9 {
+        animation-delay: 8s;
+    }
+
+    &.g-10 {
+        animation-delay: 9s;
+    }
+
+    &.g-11 {
+        animation-delay: 10s;
+    }
+
+    &.g-12 {
+        animation-delay: 11s;
+    }
+
+    &.g-13 {
+        animation-delay: 12s;
+    }
+
+    &.g-14 {
+        animation-delay: 13s;
+    }
+
+    &.g-15 {
+        animation-delay: 14s;
+    }
+
+    &.g-16 {
+        animation-delay: 15s;
+    }
+
+    &.g-17 {
+        animation-delay: 16s;
+    }
+
+    &.g-18 {
+        animation-delay: 17s;
+    }
+
+    &.g-19 {
+        animation-delay: 18s;
+    }
+}
+
+
+@keyframes dashfill {
+    4% {
+        opacity: 1;
+    }
+
+    76% {
+        opacity: 0;
+    }
+}
+
+@keyframes dash {
+    to {
+        stroke-dashoffset: 100;
+        transform: scaleY(-1);
+    }
+}

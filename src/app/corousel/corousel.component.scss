@@ -1,28 +1,27 @@
-
-.carousel-caption{
-margin-bottom:3rem;
+.carousel-caption {
+  margin-bottom: 3rem;
 }
 
 // Medium devices (tablets, less than 992px)
 @media (min-width: 991.98px) {
   .carousel-caption {
-    margin-bottom:16rem;
-    font-size:24px;
+    margin-bottom: 16rem;
+    font-size: 24px;
   }
 }
 
 // Large devices (desktops, less than 1200px)
 @media (min-width: 1199.98px) {
   .carousel-caption {
-    margin-bottom:16rem;
-    font-size:24px;
+    margin-bottom: 16rem;
+    font-size: 24px;
   }
 }
 
-.active{
+.active {
   background-color: #002060 !important;
 }
 
-.list-indicator{
+.list-indicator {
   background-color: #a3bdf1;
 }

@@ -3,82 +3,93 @@ export interface Accordion {
     listCards: Listcard[];
 }
 
+export interface SkillChip {
+    id: string;
+    title: string;
+    cardImage: Image;
+    skillList: string[];
+}
+
 export interface Listcard {
     collapseId: string;
     headerId: string;
     header: string;
     content: string;
-    progressCard?: progressCard;
+    progressCard?: ProgressCard;
 }
 
-export interface expansionCard {
-    launchImage?: image;
+export interface ExpansionCard {
+    launchImage?: Image;
     collapseId: string;
-    link?: hrefLink;
-    expansionButton: button;
+    link?: HrefLink;
+    expansionButton: Button;
     cardText?: string;
-    cardImage?: image;
+    cardImage?: Image;
     accordion?: Accordion;
 }
 
-export interface image {
+export interface Image {
     imageUrl: string;
     altText?: string;
     height?: string;
 }
 
-export interface button {
+export interface Button {
     buttoneUrl?: string;
-    buttonImage?: image;
+    buttonImage?: Image;
     buttonText?: string;
 }
 
-export interface hrefLink {
+export interface HrefLink {
     anchorUrl: string;
     target?: string;
-    linkText?:string;
+    linkText?: string;
 }
 
-export interface dropboxCombo {
-    expansionCards: expansionCard[];
-    title?: string;
+export interface DropboxCombo {
+    expansionCards: ExpansionCard[];
 }
 
-export interface progressCard {
+export interface ProgressCard {
     score: number;
     title?: string;
-    progressImage: image;
-    skillImage?: image;
+    progressImage: Image;
+    skillImage?: Image;
 }
 
-export interface homeLook{
+export interface HomeLook {
     name: string;
-    logoImage?: image;
-    headerIcons?: headerIcon[];
+    logoImage?: Image;
+    headerIcons?: HeaderIcon[];
 }
 
-export interface headerIcon {
-    link: hrefLink;
-    iconImage: image;
-    innerIconImage: image;
+export interface HeaderIcon {
+    link: HrefLink;
+    iconImage: Image;
+    innerIconImage: Image;
 }
 
-export interface objective {
+export interface Objective {
     title?: string;
     objectiveText: string;
 }
 
-export interface timeline {
-    timelineImage: image;
-    instituteImage: image;
-    dateImage: image;
-    timeLineElements?: timelineElement[];
+export interface Achievement {
+    title: string;
+    button?:Button[];
 }
 
-export interface timelineElement {
+export interface Timeline {
+    timelineImage: Image;
+    instituteImage: Image;
+    dateImage: Image;
+    timeLineElements?: TimelineElement[];
+}
+
+export interface TimelineElement {
     date: string;
-    content?: homeLook;
-    id:string;
+    content?: HomeLook;
+    id: string;
     designation: string;
     duration?: string;
     institute?: string;

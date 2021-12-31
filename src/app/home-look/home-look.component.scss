@@ -1,21 +1,19 @@
 .home {
+  align-items: center;
   box-sizing: border-box;
-  padding: 48px 48px 32px;
-  overflow: hidden;
-  transform: skewY(-8deg);
-  transform-origin: 0%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  min-height: 500px;
-  position: absolute;
   height: 500px;
+  justify-content: center;
+  min-height: 500px;
+  overflow: hidden;
+  padding: 48px 48px 32px;
+  position: absolute;
+  transform: skewY(-8deg);
+  transform-origin: 0%;
+  width: 100%;
   z-index: -5;
 }
-
-
 
 .name-title {
   font-size: 60px;
@@ -30,8 +28,8 @@
 }
 
 .content {
-  padding-top: 60px;
   padding-bottom: 80px;
+  padding-top: 60px;
 }
 
 .logo-image {

@@ -1,9 +1,24 @@
 <app-home-look></app-home-look>
-<div class='container mb-5'>
+<div class='container my-5'>
+  <app-title-svg></app-title-svg>
+  <app-title-bar [data]="aboutData.title"></app-title-bar>
+  <p class="title-font shivam-color font-weight-bold px-5 pt-3 m-0" [innerHTML]="aboutData.objectiveText"></p>
   <app-band></app-band>
-  <div class=' mt-5'>
-    <div class="mt-2">
-      <app-dropdown-combo [data]="data"></app-dropdown-combo>
+  <div class="d-flex justify-content-center align-items-center flex-column my-4">
+    <div class="d-flex w-100 justify-content-between flex-wrap">
+      <div class="connect d-flex flex-column font-weight-bold align-items-center">
+        <a target="_blank" href="https://www.linkedin.com/in/shivam-giri-7130ba227/">
+          <img src="/assets/linkedin-qr.png" height="300px">
+        </a>
+        <span>Connect with me on Linkedin</span>
+      </div>
+      <div class="connect d-flex flex-column font-weight-bold align-items-center">
+        <a target="_blank" href="https://www.instagram.com/frontend_buddy/">
+          <img src="/assets/qr-code-insta.png" height="300px">
+        </a>
+        <span>Follow my on Insta <a href="https://www.instagram.com/frontend_buddy/">@frontend-buddy</a></span>
+      </div>
     </div>
+    <a [routerLink]="['/main']"><button type="button" class="btn btn-primary btn-lg shivam-bg">Explore More</button></a>
   </div>
 </div>

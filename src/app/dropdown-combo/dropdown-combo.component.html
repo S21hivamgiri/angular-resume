@@ -1,8 +1,6 @@
 <div class="row">
-  <app-title-bar *ngIf="data.title" class='p-0' [data]='data.title'></app-title-bar>
   <div *ngFor="let list of data.expansionCards"
     class="col-md-6 col-lg-6 col-sm-12 col-xl-3 shivam-border-color expansion p-0">
-    <app-expanded-card [data]='list'>
-    </app-expanded-card>
+    <app-expanded-card [data]='list'></app-expanded-card>
   </div>
 </div>

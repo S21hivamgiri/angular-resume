@@ -1,12 +1,13 @@
 <div class="card">
   <div class="card-header mb-0" [id]="data.headerId">
-      <button class="btn btn-link font-weight-bold shivam-color border-0 hobbies w-100 " type="button" data-toggle="collapse"
-        [attr.data-target]="'#'+data.collapseId" aria-expanded="true" [attr.aria-controls]="data.collapseId">
-        {{data.header}}
-      </button>
+    <button class="btn btn-link font-weight-bold shivam-color border-0 hobbies w-100 " type="button"
+      data-toggle="collapse" [attr.data-target]="'#'+data.collapseId" aria-expanded="true"
+      [attr.aria-controls]="data.collapseId">
+      {{data.header}}
+    </button>
   </div>
   <div [id]="data.collapseId" class="collapse" [attr.aria-labelledby]="data.headerId" [attr.data-parent]="'#'+parentId">
-    <div class="card-body" >
+    <div class="card-body">
       <div *ngIf="data.content"> {{data.content}} </div>
       <app-progress-card *ngIf="data.progressCard" [data]="data.progressCard"></app-progress-card>
     </div>

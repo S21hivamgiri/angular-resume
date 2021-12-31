@@ -1,4 +1,4 @@
-import { Component, OnInit ,Input} from '@angular/core';
+import { Component, Input} from '@angular/core';
 import {Accordion} from '../constant';
 
 @Component({
@@ -6,11 +6,6 @@ import {Accordion} from '../constant';
   templateUrl: './list-accordion.component.html',
   styleUrls: ['./list-accordion.component.scss']
 })
-export class ListAccordionComponent implements OnInit {
+export class ListAccordionComponent {
   @Input() data: Accordion;
-  constructor() {}
-
-  ngOnInit(): void {
-  }
-
 }

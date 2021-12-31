@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
-import { SKILL_DATA} from './../data';
-import { dropboxCombo } from './../constant';
+import { ABOUT_DATA } from '../data';
 
 @Component({
   selector: 'app-header',
@@ -8,7 +7,6 @@ import { dropboxCombo } from './../constant';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent {
-  data: dropboxCombo = SKILL_DATA;
   constructor() {}
-
+  aboutData=ABOUT_DATA;
 }

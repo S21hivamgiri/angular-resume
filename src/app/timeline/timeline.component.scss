@@ -1,16 +1,16 @@
 #cd-timeline {
-  position: relative;
   padding: 2em 0;
+  position: relative;
 }
 
 #cd-timeline::before {
+  background: #002060;
   content: '';
+  height: 100%;
+  left: 25px;
   position: absolute;
   top: 0;
-  left: 25px;
-  height: 100%;
   width: 4px;
-  background: #002060;
 }
 
 @media only screen and (min-width: 1170px) {
@@ -22,14 +22,14 @@
 }
 
 .cd-timeline-block {
-  position: relative;
   margin: 2em 0;
+  position: relative;
 }
 
 .cd-timeline-block:after {
+  clear: both;
   content: "";
   display: table;
-  clear: both;
 }
 
 .cd-timeline-block:first-child {
@@ -55,91 +55,91 @@
 }
 
 .cd-timeline-img {
-  position: absolute;
-  top: 8px;
-  left: 12px;
-  width: 30px;
-  height: 30px;
   border-radius: 50%;
   box-shadow: 0 0 0 4px #002060,
     inset 0 2px 0 rgba(0, 0, 0, 0.08),
     0 3px 0 4px rgba(0, 0, 0, 0.05);
+  height: 30px;
+  left: 12px;
+  position: absolute;
+  top: 8px;
+  width: 30px;
 }
 
 @media only screen and (min-width: 1170px) {
   .cd-timeline-img {
-    width: 30px;
     height: 30px;
     left: 50%;
     margin-left: -15px;
     margin-top: 15px;
+    width: 30px;
   }
 }
 
 .cd-timeline-content {
-  position: relative;
-  margin-left: 60px;
-  margin-right: 30px;
   background: #002060;
   border-radius: 20px;
+  margin-left: 60px;
+  margin-right: 30px;
   padding: 1em;
+  position: relative;
 
   .timeline-content-info-title {
+    background: #ecc293;
+    border-top-right-radius: 20px;
+    display: flex;
+    font-size: 16px;
+    font-weight: bolder;
 
     padding: 5px 10px;
-    font-size: 16px;
-    background: #ecc293;
-    font-weight: bolder;
-    border-top-right-radius : 20px;
-    display:flex;
-    width:100%;
+    width: 100%;
   }
 
   .timeline-content-info-date {
+    background: #ffffff;
+    border-bottom-left-radius: 20px;
+    display: flex;
+    font-size: 16px;
+    font-weight: bolder;
+    justify-content: flex-end;
 
     padding: 5px 10px;
-    font-size: 16px;
-    background: #ffffff;
-    font-weight: bolder;
-    border-bottom-left-radius : 20px;
-    width:100%;
-    display:flex;
-    justify-content: flex-end;
+    width: 100%;
   }
 
   .content-skills {
-    font-size: 12px;
     display: flex;
     flex-wrap: wrap;
+    font-size: 12px;
     justify-content: center;
 
     li {
       background: #ecc293;
-      color: #002060;
       border-radius: 10px;
-      font-weight: bolder;
+      color: #002060;
       display: inline-block;
-      padding: 2px 10px;
-      margin: 3px 2px;
-      text-align: center;
       flex-grow: 1;
+      font-weight: bolder;
+      margin: 3px 2px;
+      padding: 2px 10px;
+      text-align: center;
     }
   }
 }
 
 .cd-timeline-content:after {
+  clear: both;
   content: "";
   display: table;
-  clear: both;
 }
 
 
 .cd-date {
-  color: white;
-  border-radius: 12px;
-  font-weight: bold;
-  font-size: 13px;
   border-bottom: 6px solid #ecc293;
+  border-radius: 12px;
+  color: white;
+  font-size: 13px;
+  font-weight: bold;
 }
 
 .cd-timeline-content .cd-date {
@@ -147,19 +147,19 @@
 }
 
 .cd-timeline-content p {
-  margin: 1em 0;
   line-height: 1.6;
+  margin: 1em 0;
 }
 
 .cd-timeline-content::before {
-  content: '';
-  position: absolute;
-  top: 16px;
-  right: 100%;
-  height: 0;
-  width: 0;
   border: 7px solid transparent;
   border-right: 7px solid #002060;
+  content: '';
+  height: 0;
+  position: absolute;
+  right: 100%;
+  top: 16px;
+  width: 0;
 }
 
 @media only screen and (min-width: 768px) {
@@ -174,26 +174,25 @@
 @media only screen and (min-width: 1170px) {
   .cd-timeline-content {
     color: white;
-    margin-left: 0;
+    margin: 0 5%;
     padding: 1.6em;
-    width: 36%;
-    margin: 0 5%
+    width: 36%
   }
 
   .cd-timeline-content::before {
-    top: 24px;
-    left: 100%;
     border-color: transparent;
     border-left-color: #002060;
+    left: 100%;
+    top: 24px;
   }
 
   .cd-timeline-content .cd-date {
-    position: absolute;
-    width: 100%;
-    left: 142%;
-    top: 6px;
     font-size: 16px;
     font-size: 1rem;
+    left: 142%;
+    position: absolute;
+    top: 6px;
+    width: 100%;
   }
 
   .cd-timeline-block:nth-child(even) .cd-timeline-content {
@@ -201,11 +200,11 @@
   }
 
   .cd-timeline-block:nth-child(even) .cd-timeline-content::before {
-    top: 24px;
-    left: auto;
-    right: 100%;
     border-color: transparent;
     border-right-color: #002060;
+    left: auto;
+    right: 100%;
+    top: 24px;
   }
 
   .cd-timeline-block:nth-child(even) .cd-timeline-content .cd-read-more {

@@ -2,8 +2,8 @@
   <img class="w-20 m-1" *ngFor="let n of getArray(score,skillImage.height)" [src]='skillImage.imageUrl'
     [attr.height]="skillImage.height">
   <span class='w-20'>
-  <span class="clipped" [attr.height]='skillImage.height' [attr.width]='skillImage.height'>
-    <img class="m-1" [src]='skillImage.imageUrl' [attr.width]="clipped+'px'" [attr.height]="skillImage.height">
-  </span>
+    <span class="clipped" [attr.height]='skillImage.height' [attr.width]='skillImage.height'>
+      <img class="m-1" [src]='skillImage.imageUrl' [attr.width]="clipped+'px'" [attr.height]="skillImage.height">
+    </span>
   </span>
 </div>

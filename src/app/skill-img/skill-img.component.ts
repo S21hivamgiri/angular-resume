@@ -1,22 +1,18 @@
-import { Component, OnInit, Input } from '@angular/core';
-import { image } from '../constant'
+import { Component, Input } from '@angular/core';
+import { Image } from '../constant';
+
 @Component({
   selector: 'app-skill-img',
   templateUrl: './skill-img.component.html',
   styleUrls: ['./skill-img.component.scss']
 })
-export class SkillImgComponent implements OnInit {
+export class SkillImgComponent {
   @Input() score: number;
-  @Input() skillImage: image;
+  @Input() skillImage: Image;
+  clipped: number;
 
-  getArray(i:number, height:string){ 
-    this.clipped = Math.floor(parseInt(height, 10) * (i-Math.floor(i)));
-    return Array(Math.floor(i))};
-  clipped:number;
-  constructor() { 
-  }
-
-  ngOnInit(): void {
-  }
-
+  getArray(i: number, height: string) {
+    this.clipped = Math.floor(parseInt(height, 10) * (i - Math.floor(i)));
+    return Array(Math.floor(i))
+  };
 }

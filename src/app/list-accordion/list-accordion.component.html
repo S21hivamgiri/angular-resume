@@ -1,6 +1,5 @@
 <div class="accordion" [id]="data.accordionId" *ngIf='data?.accordionId'>
   <div *ngFor="let list of data.listCards" class='listcard shivam-border-color'>
-    <app-list-cards [data]='list' [parentId]='data.accordionId'>
-    </app-list-cards>
+    <app-list-cards [data]='list' [parentId]='data.accordionId'></app-list-cards>
   </div>
 </div>

@@ -5,21 +5,19 @@
 </a>
 <div id="tab-element-{{count}}" class="tab-elements anchor-image mt-4 mr-2 btn-group" *ngIf="data?.link.anchorUrl"
   [style]="'top :'+ topCalculation() +'px;background:white;
-  border-radius:20px;height:'+data.iconImage.height"
-  role="group" aria-label="Basic example">
+  border-radius:20px;height:'+data.iconImage.height" role="group" aria-label="Basic example">
   <button class="anchor-href tab-button p-0 close-button border-0 border-right shivam-border-color"
     (click)="hideContent(count)">
     &#xd7;</button>
   <button class="tab-button border-0 text-button ">
-  
-      <a class="px-3 anchor-href shivam-color text-decoration-none"
-      [href]="data?.link.anchorUrl" [target]="data?.link.target"> <img *ngIf="data.innerIconImage.imageUrl"
-        [src]="data.innerIconImage.imageUrl" [alt]="data.innerIconImage.altText" class="use-class"
+    <a class="px-3 anchor-href shivam-color text-decoration-none" [href]="data?.link.anchorUrl"
+      [target]="data?.link.target"> <img *ngIf="data.innerIconImage.imageUrl" [src]="data.innerIconImage.imageUrl"
+        [alt]="data.innerIconImage.altText" class="use-class"
         [attr.height]="data.innerIconImage.height" />{{data.link.linkText}}
     </a>
-</button>
+  </button>
   <a class="tab-button cursor-pointer link-button border-0 shivam-border-color" (click)="hideContent(count)">
-    <img *ngIf="data.iconImage.imageUrl" [src]="data.iconImage.imageUrl" [alt]="data.iconImage.altText" class="use-class"
-      [attr.height]="data.iconImage.height" />
+    <img *ngIf="data.iconImage.imageUrl" [src]="data.iconImage.imageUrl" [alt]="data.iconImage.altText"
+      class="use-class" [attr.height]="data.iconImage.height" />
   </a>
 </div>

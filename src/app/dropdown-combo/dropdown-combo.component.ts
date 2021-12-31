@@ -1,14 +1,10 @@
-import { Component, OnInit, Input } from '@angular/core';
-import {dropboxCombo} from '../constant';
+import { Component, Input } from '@angular/core';
+import {DropboxCombo} from '../constant';
 @Component({
   selector: 'app-dropdown-combo',
   templateUrl: './dropdown-combo.component.html',
   styleUrls: ['./dropdown-combo.component.scss']
 })
-export class DropdownComboComponent implements OnInit {
-  @Input() data: dropboxCombo;
-  constructor() {}
-  ngOnInit(): void {
-  }
-
+export class DropdownComboComponent {
+  @Input() data: DropboxCombo;
 }

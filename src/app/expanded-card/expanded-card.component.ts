@@ -1,15 +1,10 @@
-import { Component, OnInit,Input} from '@angular/core';
-import { expansionCard} from '../constant'
+import { Component, Input } from '@angular/core';
+import { ExpansionCard } from '../constant'
 @Component({
   selector: 'app-expanded-card',
   templateUrl: './expanded-card.component.html',
   styleUrls: ['./expanded-card.component.scss']
 })
-export class ExpandedCardComponent implements OnInit {
-  @Input() data: expansionCard;
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
+export class ExpandedCardComponent {
+  @Input() data: ExpansionCard;
 }

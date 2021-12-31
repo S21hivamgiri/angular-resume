@@ -1,1 +1,15 @@
-<p>skill works!</p>
+<div class="mt-4 mb-5">
+    <ng-container *ngFor="let data of skills">
+        <div [title]="data.title" [id]="data.id" class="pt-1 flex-wrap shivam-border-color d-flex my-3 data-set">
+            <div class="p-1 image shivam-border-color d-flex justify-content-center">
+                <img  [src]="data.cardImage.imageUrl" [alt]="data.cardImage.altText" [attr.height]="data.cardImage.height">
+            </div>
+            <div class="p-4 chip-bar">
+                <h2 class="shivam-color ">{{data.title}}</h2>
+                <ng-container *ngFor="let chip of data.skillList">
+                    <span class="badge rounded-pill bg-danger mx-1 px-3 py-1" [title]="chip">{{chip}}</span>
+                </ng-container>
+            </div>
+        </div>
+    </ng-container>
+</div>

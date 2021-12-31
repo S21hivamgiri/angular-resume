@@ -1,5 +1,204 @@
-import { dropboxCombo, Accordion, objective, homeLook, timeline } from './constant';
+import { DropboxCombo, Accordion, Objective, HomeLook, Timeline, SkillChip, Achievement } from './constant';
 
+export const NAME = "SHIVAM KUMAR GIRI";
+
+export const OBJECTIVE: Objective = {
+    title: 'OBJECTIVE',
+    objectiveText: `To make a meaningful impact on the lives of people around the globe, through the perspective of a JS developer and an creative designer.`
+}
+
+export const ABOUT_DATA: Objective = {
+    title: "Summary",
+    objectiveText: "Professional Front End Developer with 2+ year of Experience in designing, developing and maintaining 2 Enterprise level Web Application in Google (a client of GlobalLogic India) which includes writing both unit and integration test cases and writing reusable and quality code. "
+}
+
+export const ACHIEVEMENTS: Achievement[] = [
+    {
+        title: "Worked with GlobalLogic India as <span class='shivam-color font-weight-bold'> a Frontend Developer for 2+year with Google as a client</span>  and worked on 2 major websites/ projects, majorly on technologies like<span class='shivam-color font-weight-bold'> Reactive JS, Sass, Angular and proprietary Google Tools.</span>",
+        button: [{
+            buttoneUrl: "https://www.globallogic.com/in/about/locations/india/",
+            buttonImage: {
+                imageUrl: '/assets/global-logic.jpg',
+                altText: 'Global Logic',
+                height: '30px'
+            },
+            buttonText: "GlobalLogic",
+        }]
+    },
+    {
+        title: "A project on “<span class='shivam-color font-weight-bold'> Online Hostel Management for National Institute of Technology, Puducherry</span>” in PHP. ",
+        button: [{
+            buttoneUrl: "https://github.com/S21hivamgiri/Student-hostel-Management-in-php",
+            buttonImage: {
+                imageUrl: '/assets/github-logo.png',
+                altText: 'Github',
+                height: '30px'
+            },
+            buttonText: "GitHub",
+        }]
+    },
+    { title: "<span class='shivam-color font-weight-bold'> Web-Committee head </span> of NIT Puducherry 2018-2019." },
+    {
+        title: "A website on <span class='shivam-color font-weight-bold'> registration and auction of cricket players </span> in PHP and MySQL as per requirement. ",
+        button: [{
+            buttoneUrl: "https://github.com/S21hivamgiri/Student-hostel-Management-in-php",
+            buttonImage: {
+                imageUrl: '/assets/github-logo.png',
+                altText: 'GitHub Link',
+                height: '30px'
+            },
+            buttonText: "GitHub",
+        }]
+    },
+    {
+        title: "Worked on <span class='shivam-color font-weight-bold'>  5 major frontend Projects</span> on MEAN/MERN stack.",
+        button: [{
+            buttoneUrl: "https://github.com/S21hivamgiri/Music-Mania--Music-Player-in-Javascript",
+            buttonImage: {
+                imageUrl: '/assets/github-logo.png',
+                altText: 'Github Link',
+                height: '30px'
+            },
+            buttonText: "GitHub",
+        }, {
+            buttoneUrl: "https://github.com/S21hivamgiri/Sparkle-Notes",
+            buttonImage: {
+                imageUrl: '/assets/github-logo.png',
+                altText: 'Github Link',
+                height: '30px'
+            },
+            buttonText: "GitHub",
+        }, {
+            buttoneUrl: "https://github.com/S21hivamgiri/CBook-The-Contact-Saving-Book",
+            buttonImage: {
+                imageUrl: '/assets/github-logo.png',
+                altText: 'Github Link',
+                height: '30px'
+            },
+            buttonText: "GitHub",
+        }, {
+            buttoneUrl: "https://github.com/S21hivamgiri/DrawDream",
+            buttonImage: {
+                imageUrl: '/assets/github-logo.png',
+                altText: 'Github Link',
+                height: '30px'
+            },
+            buttonText: "GitHub",
+        },
+        {
+            buttoneUrl: "https://github.com/S21hivamgiri/Vibrant-The-Online-Event-Management-Site",
+            buttonImage: {
+                imageUrl: '/assets/github-logo.png',
+                altText: 'Github Link',
+                height: '30px'
+            },
+            buttonText: "GitHub",
+        }]
+    },
+    {
+        title: "Worked on <span class='shivam-color font-weight-bold'> 1 End to End Project </span> in Angular.",
+        button: [{
+            buttoneUrl: "https://github.com/S21hivamgiri/Music-Mania--Music-Player-in-Javascript",
+            buttonImage: {
+                imageUrl: '/assets/github-logo.png',
+                altText: 'Github Link',
+                height: '30px'
+            },
+            buttonText: "GitHub",
+        }]
+    },
+    {
+        title: "Make the<span class='shivam-color font-weight-bold'>  Video and Webs version of my Resume</span. ",
+        button: [{
+            buttoneUrl: "https://github.com/S21hivamgiri/angular-resume",
+            buttonImage: {
+                imageUrl: '/assets/github-logo.png',
+                altText: 'Github Link',
+                height: '30px'
+            },
+            buttonText: "GitHub",
+        },
+        {
+            buttoneUrl: "https://youtu.be/zraNaV41hxM",
+            buttonImage: {
+                imageUrl: '/assets/youtube.png',
+                altText: 'Youtube Link',
+                height: '30px'
+            },
+            buttonText: "YouTube",
+        }
+        ]
+    },
+    {
+        title: "Grabbed 6th position at final level in spotle.ai competition on topic <span class='shivam-color font-weight-bold'> “Impact of Pandemic on Mental Health on Indians.” </span>",
+        button: [{
+            buttoneUrl: "https://github.com/S21hivamgiri/Mood-Detection-from-Text",
+            buttonImage: {
+                imageUrl: '/assets/github-logo.png',
+                altText: 'Github Link',
+                height: '30px'
+            },
+            buttonText: "GitHub",
+        },
+        {
+            buttoneUrl: "https://spotle.ai/ShivamKumarGiri/about",
+            buttonImage: {
+                imageUrl: '/assets/spotle.png',
+                altText: 'Spotle Link',
+                height: '30px'
+            },
+            buttonText: "Spoltle.ai",
+        },
+        ],
+    },
+    {
+        title: "<span class='shivam-color font-weight-bold'> Instagram account on Frontend Coding guide <span> @frontend_buddy.",
+        button: [{
+            buttoneUrl: "https://www.instagram.com/frontend_buddy/",
+            buttonImage: {
+                imageUrl: '/assets/instagram-logo.svg',
+                altText: 'Instagram Link',
+                height: '30px'
+            },
+            buttonText: "Instagram",
+        }],
+    }
+]
+
+export const SKILL_CHIP: SkillChip[] = [{
+    id: 'frontend',
+    title: 'FrontEnd Tools/Skills (Core)',
+    cardImage: {
+        imageUrl: '/assets/frontend.png',
+        altText: 'FrontEnd',
+        height: '150px'
+    },
+    skillList: ["JavaScript", "TypeScript", "Angular", "PHP", "Sass", , "React", , "Vue", "Rx-JS", "Responsiveness", "Jasmine", "Unit Testing", "Integration Testing", "UI / UX", "Graphic Designing"]
+},
+{
+    id: 'backend',
+    title: 'Backend Tools/Skills (Exp.)',
+    cardImage: {
+        imageUrl: '/assets/backend.png',
+        altText: 'Backend',
+        height: '150px'
+    },
+    skillList: [
+        'NodeJS', "Rest API", 'MongoDB', 'SQL', 'Redis', 'Postman', 'Express', 'Flask', 'Django', 'Redis'
+    ]
+},
+{
+    id: 'others',
+    title: 'Other Tools/Skills (Exp)',
+    cardImage: {
+        imageUrl: '/assets/others.png',
+        altText: 'Other',
+        height: '150px'
+    },
+    skillList: ["Google Analytics", "Data Studio", "Git", "Power BI", "MS Office", "Illustrator", "Data Structures", "Algorithms"
+    ]
+}
+]
 
 export const HOBBY_DATA: Accordion = {
     accordionId: 'hobby-accordion',
@@ -9,29 +208,29 @@ export const HOBBY_DATA: Accordion = {
             headerId: 'hobby-header-1',
             header: 'Social Sciences',
             content: "Social Science include psychology, geography, history, GK and current affairs and other subjects, wich fascinate alot.",
-        }, {
+        },
+        {
             collapseId: 'hobby-2',
             headerId: 'hobby-header-2',
             header: 'Philatelist',
             content: "Philately is the study of postage stamps and postal history. its a intrest, now faded a little, enhances the cultural and political history of a country and place.",
-        }, {
+        },
+        {
             collapseId: 'hobby-3',
             headerId: 'hobby-header-3',
-            header: 'Management',
+            header: 'Event Management',
             content: '" Managing the event and moments, included from checklist and agenda to final execution, being as a web and food coordiantor in various tech fest and other fest."',
-        }, {
+        },
+        {
             collapseId: 'hobby-4',
             headerId: 'hobby-header-4',
             header: 'Cooking',
             content: " Cooking or cookery is the art, science and craft of using perfect blend of variety of ingredient to create a perfect and delicious stuff for consumption. Mostly intrested in Chinese.",
         }
     ],
-
 };
 
-export const NAME = "SHIVAM KUMAR GIRI";
-
-export const HOME_LOOK: homeLook = {
+export const HOME_LOOK: HomeLook = {
     name: NAME,
     logoImage: {
         imageUrl: "/assets/Shivam-Logo.png",
@@ -70,11 +269,116 @@ export const HOME_LOOK: homeLook = {
             altText: 'Open Email',
             height: '30px',
         }
-    },],
-
+    },
+    ],
 }
 
-export const TIME_LINE: timeline = {
+export const CONTACT_DATA: DropboxCombo = {
+    expansionCards: [
+        {
+            collapseId: 'emailCollapse',
+            launchImage: {
+                imageUrl: "/assets/email-open.png",
+                altText: 'Launch',
+                height: '30px',
+            },
+            expansionButton: {
+                buttonText: 'Email',
+                buttonImage: {
+                    imageUrl: "/assets/email-logo.png",
+                    altText: 'Email',
+                    height: '30px',
+                },
+            },
+            cardImage: {
+                imageUrl: "/assets/email.jpg",
+                altText: 'Email Background',
+            },
+            link: {
+                anchorUrl: 'mailto:shivamgiri2015@gmail.com',
+                linkText: 'shivamgiri2015',
+                target: '_blank'
+            }
+        },
+        {
+            collapseId: 'whatsappCollapse',
+            launchImage: {
+                imageUrl: "/assets/whatsapp-message-icon.png",
+                altText: 'Launch',
+                height: '30px',
+            },
+            expansionButton: {
+                buttonText: 'Whatsapp',
+                buttonImage: {
+                    imageUrl: "/assets/whatsapp-logo.png",
+                    altText: 'Whatsapp',
+                    height: '30px',
+                },
+            },
+            cardImage: {
+                imageUrl: "/assets/whatsapp-bg.jpg",
+                altText: 'Whatsapp Background',
+            },
+            link: {
+                anchorUrl: 'https://wa.me/919361688508',
+                linkText: '+91 9361688508',
+                target: '_blank'
+            }
+        },
+        {
+            collapseId: 'githubCollapse',
+            launchImage: {
+                imageUrl: "/assets/launch.png",
+                altText: 'Launch',
+                height: '30px',
+            },
+            expansionButton: {
+                buttonText: 'Github',
+                buttonImage: {
+                    imageUrl: "/assets/github-logo.png",
+                    altText: 'Github',
+                    height: '30px',
+                },
+            },
+            cardImage: {
+                imageUrl: "/assets/github-bg.jpg",
+                altText: 'Github Background',
+            },
+            link: {
+                anchorUrl: 'https://github.com/S21hivamgiri',
+                linkText: 'S21hivamgiri',
+                target: '_blank'
+            }
+        },
+        {
+            collapseId: 'Collapse',
+            launchImage: {
+                imageUrl: "/assets/launch.png",
+                altText: 'Launch',
+                height: '30px',
+            },
+            expansionButton: {
+                buttonText: 'LinkedIn',
+                buttonImage: {
+                    imageUrl: "/assets/linkedin-logo.png",
+                    altText: 'LinkedIn',
+                    height: '30px',
+                },
+            },
+            cardImage: {
+                imageUrl: "/assets/linkedin-bg.jpg",
+                altText: 'LinkedIn Background',
+            },
+            link: {
+                anchorUrl: 'https://www.linkedin.com/in/shivam-giri-7130ba227/',
+                linkText: 'Visit',
+                target: '_blank'
+            }
+        },
+    ]
+}
+
+export const TIME_LINE: Timeline = {
     instituteImage: {
         imageUrl: "/assets/unversity.png",
         altText: 'University Logo',
@@ -151,122 +455,16 @@ export const TIME_LINE: timeline = {
     ]
 }
 
-export const OBJECTIVE: objective = {
-    title: 'OBJECTIVE',
-    objectiveText: `To make a meaningful impact on the lives of people
-      around the globe, through
-      the perspective of a JS developer and an creative designer.`
-}
+export const OTHER_ACTIVITY: string[] = [
+    "Internship in communication, data tracking and analyzing at ISRO.",
+    "Gained 3rd position in GlobalLogic Machine Learning HackaThon on “Drowsiness Detection and alert system for Drivers”.",
+    "Developer of GYANITH’17 and GYANITH’18 sites in PHP. ",
+    "Full Stack XAMPP, MEAN and MERN Developer.",
+    "Worked on 8085 Micro Processor Mini Project.",
+    "Worked on 15 + Machine Learning and AI Mini Project.",
+]
 
-
-export const CONTACT_DATA: dropboxCombo = {
-    expansionCards: [
-        {
-            collapseId: 'emailCollapse',
-            launchImage: {
-                imageUrl: "/assets/email-open.png",
-                altText: 'Launch',
-                height: '30px',
-            },
-            expansionButton: {
-                buttonText: 'Email',
-                buttonImage: {
-                    imageUrl: "/assets/email-logo.png",
-                    altText: 'Email',
-                    height: '30px',
-                },
-            },
-            cardImage: {
-                imageUrl: "/assets/email.jpg",
-                altText: 'Email Background',
-            },
-            link: {
-                anchorUrl: 'mailto:shivamgiri2015@gmail.com',
-                linkText: 'shivamgiri2015',
-                target: '_blank'
-            }
-        },
-        {
-            collapseId: 'whatsappCollapse',
-            launchImage: {
-                imageUrl: "/assets/whatsapp-message-icon.png",
-                altText: 'Launch',
-                height: '30px',
-            },
-            expansionButton: {
-                buttonText: 'Whatsapp',
-                buttonImage: {
-                    imageUrl: "/assets/whatsapp-logo.png",
-                    altText: 'Whatsapp',
-                    height: '30px',
-                },
-            },
-            cardImage: {
-                imageUrl: "/assets/whatsapp-bg.jpg",
-                altText: 'Whatsapp Background',
-            },
-            link: {
-                anchorUrl: 'https://wa.me/919531809590',
-                linkText: '+91 9531809590',
-                target: '_blank'
-            }
-        },
-        {
-            collapseId: 'githubCollapse',
-            launchImage: {
-                imageUrl: "/assets/launch.png",
-                altText: 'Launch',
-                height: '30px',
-            },
-            expansionButton: {
-                buttonText: 'Github',
-                buttonImage: {
-                    imageUrl: "/assets/github-logo.png",
-                    altText: 'Github',
-                    height: '30px',
-                },
-            },
-            cardImage: {
-                imageUrl: "/assets/github-bg.jpg",
-                altText: 'Github Background',
-            },
-            link: {
-                anchorUrl: 'https://github.com/S21hivamgiri',
-                linkText: 'S21hivamgiri',
-                target: '_blank'
-            }
-        },
-        {
-            collapseId: 'Collapse',
-            launchImage: {
-                imageUrl: "/assets/launch.png",
-                altText: 'Launch',
-                height: '30px',
-            },
-            expansionButton: {
-                buttonText: 'LinkedIn',
-                buttonImage: {
-                    imageUrl: "/assets/linkedin-logo.png",
-                    altText: 'LinkedIn',
-                    height: '30px',
-                },  
-            },
-            cardImage: {
-                imageUrl: "/assets/linkedin-bg.jpg",
-                altText: 'LinkedIn Background',
-            },
-            link: {
-                anchorUrl: 'https://www.linkedin.com/in/shivam-kumar-giri-3b36b7130/',
-                linkText: 'Visit',
-                target: '_blank'
-            }
-        },
-    ]
-}
-
-
-export const SKILL_DATA: dropboxCombo = {
-    title: 'SKILLS',
+export const SKILL_DATA: DropboxCombo = {
     expansionCards: [
         {
             collapseId: 'javaScriptCollapse',
@@ -294,7 +492,6 @@ export const SKILL_DATA: dropboxCombo = {
                                 altText: 'Mmean Logo',
                                 height: '44px',
                             },
-
                         }
                     }, {
                         collapseId: 'js-stack-3',
@@ -309,7 +506,6 @@ export const SKILL_DATA: dropboxCombo = {
                                 altText: 'SQL Logo',
                                 height: '44px',
                             },
-
                         }
                     },
                     {
@@ -325,7 +521,6 @@ export const SKILL_DATA: dropboxCombo = {
                                 altText: 'Xampp Logo',
                                 height: '44px',
                             },
-
                         }
                     }, {
                         collapseId: 'js-stack-4',
@@ -340,7 +535,153 @@ export const SKILL_DATA: dropboxCombo = {
                                 altText: 'UI Logo',
                                 height: '44px',
                             },
-
+                        }
+                    },
+                ],
+            },
+        },
+        {
+            collapseId: 'graphicDesignCollapse',
+            expansionButton: {
+                buttonText: 'Graphic Designer',
+                buttonImage: {
+                    imageUrl: "/assets/graphic-designer.png",
+                    altText: 'Graphic Designer Logo',
+                    height: '30px',
+                },
+            },
+            accordion: {
+                accordionId: 'graphic-design-accordion',
+                listCards: [
+                    {
+                        collapseId: 'graphic-design-1',
+                        headerId: 'graphic-design-header-1',
+                        header: 'Adobe Illustrator',
+                        content: " Adobe Illustrator is the industry-standard vector graphics software that's used by millions of designers and artists to create vectors and svg.",
+                        progressCard: {
+                            score: 4.7,
+                            title: "Adobe Illustrator",
+                            progressImage: {
+                                imageUrl: "/assets/illustrator.png",
+                                altText: 'Adobe Illustrator Logo',
+                                height: '44px',
+                            },
+                        }
+                    }, {
+                        collapseId: 'graphic-design-2',
+                        headerId: 'graphic-design-header-2',
+                        header: 'Adobe Photoshop',
+                        content: "Adobe Photoshop is the world-class imaging and graphic design software that’s used in creative project from photo editing and compositing to digital painting, animation, and graphic design.",
+                        progressCard: {
+                            score: 4.3,
+                            title: "Adobe Photoshop",
+                            progressImage: {
+                                imageUrl: "/assets/photoshop.png",
+                                altText: 'Adobe Photoshop Logo',
+                                height: '44px',
+                            },
+                        }
+                    }, {
+                        collapseId: 'graphic-design-3',
+                        headerId: 'graphic-design-header-3',
+                        header: 'VideoScribe',
+                        content: "VideoScribe is the unique tool for creating engaging animated content to tell the story with white board animation.",
+                        progressCard: {
+                            score: 4.8,
+                            title: "VideoScribe",
+                            progressImage: {
+                                imageUrl: "/assets/videoscribe.png",
+                                altText: 'VideoScribe Logo',
+                                height: '44px',
+                            },
+                        }
+                    },
+                    {
+                        collapseId: 'graphic-design-4',
+                        headerId: 'graphic-design-header-4',
+                        header: 'Vegas Pro',
+                        content: "Vegas Pro (also stylized as VEGAS Pro) is a video editing software package for non-linear editing (NLE). Vegas features real-time multitrack video and audio editing on unlimited tracks, resolution-independent video sequencing, complex effects and compositing tools,",
+                        progressCard: {
+                            score: 4.0,
+                            title: "Vegas Pro",
+                            progressImage: {
+                                imageUrl: "/assets/vegas.png",
+                                altText: 'Vegas Logo',
+                                height: '44px',
+                            },
+                        }
+                    },
+                ],
+            },
+        }, {
+            collapseId: 'msOfficeCollapse',
+            expansionButton: {
+                buttonText: 'MicroSoft Office',
+                buttonImage: {
+                    imageUrl: "/assets/office.png",
+                    altText: 'MicroSoft-Office Logo',
+                    height: '30px',
+                },
+            },
+            accordion: {
+                accordionId: 'ms-office-accordion',
+                listCards: [
+                    {
+                        collapseId: 'ms-office-1',
+                        headerId: 'ms-office-header-1',
+                        header: 'PowerPoint',
+                        content: "Microsoft PowerPoint empowers you to create clean slide presentations and intricate pitch decks.",
+                        progressCard: {
+                            score: 4.6,
+                            title: "POWER POINT",
+                            progressImage: {
+                                imageUrl: "/assets/power-point.png",
+                                altText: 'PowerPoint Logo',
+                                height: '44px',
+                            },
+                        }
+                    }, {
+                        collapseId: 'ms-office-2',
+                        headerId: 'ms-office-header-2',
+                        header: 'WORD',
+                        content: "Use Microsoft Word is used for the word processing and document creation.",
+                        progressCard: {
+                            score: 4.7,
+                            title: "Word",
+                            progressImage: {
+                                imageUrl: "/assets/word.png",
+                                altText: 'JS Stack Developer Logo',
+                                height: '44px',
+                            },
+                        }
+                    }, {
+                        collapseId: 'ms-office-3',
+                        headerId: 'ms-office-header-3',
+                        header: 'Visio',
+                        content: "Microsoft Visio is a diagramming tool that allows you to create simple as well as complex diagrams according to your business needs.",
+                        progressCard: {
+                            score: 4.4,
+                            title: "VISIO",
+                            progressImage: {
+                                imageUrl: "/assets/visio.png",
+                                altText: 'Visio Logo',
+                                height: '44px',
+                            },
+                        }
+                    },
+                    {
+                        collapseId: 'ms-office-4',
+                        headerId: 'ms-office-header-4',
+                        header: 'Excel',
+                        content: "Microsoft Excel is the industry leading spreadsheet program, a powerful data visualization and analysis tool.",
+                        progressCard: {
+                            score: 3.2,
+                            title: "excel",
+                            progressImage: {
+                                imageUrl: "/assets/excel.png",
+                                altText: 'Excel Logo',
+                                height: '44px',
+                            },
                         }
                     },
                 ],
@@ -367,15 +708,14 @@ export const SKILL_DATA: dropboxCombo = {
                         progressCard: {
                             score: 3.5,
                             title: "Neural Networks",
-
                             progressImage: {
                                 imageUrl: "/assets/neural-network.png",
                                 altText: 'Neural Networks Logo',
                                 height: '44px',
                             },
-
                         }
-                    }, {
+                    },
+                    {
                         collapseId: 'data-science-2',
                         headerId: 'data-science-header-2',
                         header: 'Supervised Learning',
@@ -383,13 +723,11 @@ export const SKILL_DATA: dropboxCombo = {
                         progressCard: {
                             score: 4.8,
                             title: "Supervised Learning",
-
                             progressImage: {
                                 imageUrl: "assets/supervised-learning.png",
                                 altText: 'Supervised Learning  Logo',
                                 height: '44px',
                             },
-
                         }
                     }, {
                         collapseId: 'data-science-3',
@@ -399,13 +737,11 @@ export const SKILL_DATA: dropboxCombo = {
                         progressCard: {
                             score: 4.3,
                             title: "Tensorflow",
-
                             progressImage: {
                                 imageUrl: "/assets/tensorflow.png",
                                 altText: 'Tensorflow Logo',
                                 height: '44px',
                             },
-
                         }
                     }, {
                         collapseId: 'data-science-4',
@@ -415,178 +751,13 @@ export const SKILL_DATA: dropboxCombo = {
                         progressCard: {
                             score: 4.5,
                             title: "Python",
-
                             progressImage: {
                                 imageUrl: "/assets/python.png",
                                 altText: 'Python Logo',
                                 height: '44px',
                             },
-
                         }
                     }
-                ],
-            },
-        },
-        {
-            collapseId: 'graphicDesignCollapse',
-            expansionButton: {
-                buttonText: 'Graphic Designer',
-                buttonImage: {
-                    imageUrl: "/assets/graphic-designer.png",
-                    altText: 'Graphic Designer Logo',
-                    height: '30px',
-                },
-            },
-            accordion: {
-                accordionId: 'graphic-design-accordion',
-                listCards: [
-                    {
-                        collapseId: 'graphic-design-1',
-                        headerId: 'graphic-design-header-1',
-                        header: 'Adobe Illustrator',
-                        content: " Adobe Illustrator is the industry-standard vector graphics software that's used by millions of designers and artists to create vectors and svg.",
-                        progressCard: {
-                            score: 4.7,
-                            title: "Adobe Illustrator",
-
-                            progressImage: {
-                                imageUrl: "/assets/illustrator.png",
-                                altText: 'Adobe Illustrator Logo',
-                                height: '44px',
-                            },
-
-                        }
-                    }, {
-                        collapseId: 'graphic-design-2',
-                        headerId: 'graphic-design-header-2',
-                        header: 'Adobe Photoshop',
-                        content: "Adobe Photoshop is the world-class imaging and graphic design software that’s used in creative project from photo editing and compositing to digital painting, animation, and graphic design.",
-                        progressCard: {
-                            score: 4.3,
-                            title: "Adobe Photoshop",
-
-                            progressImage: {
-                                imageUrl: "/assets/photoshop.png",
-                                altText: 'Adobe Photoshop Logo',
-                                height: '44px',
-                            },
-
-                        }
-                    }, {
-                        collapseId: 'graphic-design-3',
-                        headerId: 'graphic-design-header-3',
-                        header: 'VideoScribe',
-                        content: "VideoScribe is the unique tool for creating engaging animated content to tell the story with white board animation.",
-                        progressCard: {
-                            score: 4.8,
-                            title: "VideoScribe",
-
-                            progressImage: {
-                                imageUrl: "/assets/videoscribe.png",
-                                altText: 'VideoScribe Logo',
-                                height: '44px',
-                            },
-
-                        }
-                    },
-                    {
-                        collapseId: 'graphic-design-4',
-                        headerId: 'graphic-design-header-4',
-                        header: 'Vegas Pro',
-                        content: "Vegas Pro (also stylized as VEGAS Pro) is a video editing software package for non-linear editing (NLE). Vegas features real-time multitrack video and audio editing on unlimited tracks, resolution-independent video sequencing, complex effects and compositing tools,",
-                        progressCard: {
-                            score: 4.0,
-                            title: "Vegas Pro",
-
-                            progressImage: {
-                                imageUrl: "/assets/vegas.png",
-                                altText: 'Vegas Logo',
-                                height: '44px',
-                            },
-
-                        }
-                    },
-                ],
-            },
-        }, {
-            collapseId: 'msOfficeCollapse',
-            expansionButton: {
-                buttonText: 'MicroSoft Office',
-                buttonImage: {
-                    imageUrl: "/assets/office.png",
-                    altText: 'MicroSoft-Office Logo',
-                    height: '30px',
-                },
-            },
-            accordion: {
-                accordionId: 'ms-office-accordion',
-                listCards: [
-                    {
-                        collapseId: 'ms-office-1',
-                        headerId: 'ms-office-header-1',
-                        header: 'PowerPoint',
-                        content: "Microsoft PowerPoint empowers you to create clean slide presentations and intricate pitch decks.",
-                        progressCard: {
-                            score: 4.6,
-                            title: "POWER POINT",
-
-                            progressImage: {
-                                imageUrl: "/assets/power-point.png",
-                                altText: 'PowerPoint Logo',
-                                height: '44px',
-                            },
-
-                        }
-                    }, {
-                        collapseId: 'ms-office-2',
-                        headerId: 'ms-office-header-2',
-                        header: 'WORD',
-                        content: "Use Microsoft Word is used for the word processing and document creation.",
-                        progressCard: {
-                            score: 4.7,
-                            title: "Word",
-
-                            progressImage: {
-                                imageUrl: "/assets/word.png",
-                                altText: 'JS Stack Developer Logo',
-                                height: '44px',
-                            },
-
-                        }
-                    }, {
-                        collapseId: 'ms-office-3',
-                        headerId: 'ms-office-header-3',
-                        header: 'Visio',
-                        content: "Microsoft Visio is a diagramming tool that allows you to create simple as well as complex diagrams according to your business needs.",
-                        progressCard: {
-                            score: 4.4,
-                            title: "VISIO",
-
-                            progressImage: {
-                                imageUrl: "/assets/visio.png",
-                                altText: 'Visio Logo',
-                                height: '44px',
-                            },
-
-                        }
-                    },
-                    {
-                        collapseId: 'ms-office-4',
-                        headerId: 'ms-office-header-4',
-                        header: 'Excel',
-                        content: "Microsoft Excel is the industry leading spreadsheet program, a powerful data visualization and analysis tool.",
-                        progressCard: {
-                            score: 3.2,
-                            title: "excel",
-
-                            progressImage: {
-                                imageUrl: "/assets/excel.png",
-                                altText: 'Excel Logo',
-                                height: '44px',
-                            },
-
-                        }
-                    },
                 ],
             },
         },

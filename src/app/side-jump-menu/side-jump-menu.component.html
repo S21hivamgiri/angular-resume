@@ -1,7 +1,6 @@
 <div class="container mb-5">
   <div class='row pt-2 px-1'>
-    <nav id="navbar-desktop" *ngIf="!(isMobile)"
-      class="navbar-light navbar-inverse navbar-fixed-top list-group list-group-flush 
+    <nav id="navbar-desktop" *ngIf="!(isMobile)" class="navbar-light navbar-inverse navbar-fixed-top list-group list-group-flush 
         col-lg-2 col-xl-2 d-none d-xl-block d-lg-block">
       <div class="sticky-top z-index-3 col-12">
         <ul class="nav nav-pills">
@@ -14,16 +13,20 @@
             </a>
           </li>
           <li type="button" class="list-group-item list-group-item-action nav-item"><a class="nav-link"
-             (click)="navigateUrl('timeline', $event)" href="#timeline">Timeline</a></li>
+              (click)="navigateUrl('skills', $event)" href="#skills">Skills</a></li>
           <li type="button" class="list-group-item list-group-item-action nav-item"><a class="nav-link"
-             (click)="navigateUrl('hobbies', $event)" href="#hobbies">Hobbies</a></li>
+              (click)="navigateUrl('achievement', $event)" href="#achievement">Achievement</a></li>
           <li type="button" class="list-group-item list-group-item-action nav-item"><a class="nav-link"
-             (click)="navigateUrl('achievement', $event)" href="#achievement">Achievement</a></li>
+              (click)="navigateUrl('timeline', $event)" href="#timeline">Timeline</a></li>
           <li type="button" class="list-group-item list-group-item-action nav-item"><a class="nav-link"
-             (click)="navigateUrl('contact', $event)" href="#contact">Contact</a></li>
+              (click)="navigateUrl('hobbies', $event)" href="#hobbies">Hobbies</a></li>
+          <li type="button" class="list-group-item list-group-item-action nav-item"><a class="nav-link"
+              (click)="navigateUrl('other-activity', $event)" href="#other-activity">Other Activities</a></li>
+          <li type="button" class="list-group-item list-group-item-action nav-item"><a class="nav-link"
+              (click)="navigateUrl('contact', $event)" href="#contact">Contact</a></li>
         </ul>
       </div>
-    </nav> 
+    </nav>
     <nav id="navbar-desktop" *ngIf="isMobile"
       class="navbar-light navbar-inverse navbar-fixed-top list-group list-group-flush col-md-12 col-sm-12 d-xl-none d-lg-none">
       <div class="container position-fixed mobile-navbar z-index-3  bg-white">
@@ -35,13 +38,17 @@
         </a>
         <ul class="nav nav-pills mobile-ul">
           <li type="button" class="nav-item"><a class="nav-link px-2 shivam-border-color navbar-link"
-             (click)="navigateUrl('timeline', $event)" href="#timeline">Timeline</a> </li>
+              (click)="navigateUrl('skills', $event)" href="#skills">Skills</a> </li>
           <li type="button" class="nav-item"><a class="nav-link px-2 shivam-border-color navbar-link"
-             (click)="navigateUrl('hobbies', $event)" href="#hobbies">Hobbies</a></li>
+              (click)="navigateUrl('achievement', $event)" href="#achievement">Achievement</a></li>
           <li type="button" class="nav-item"><a class="nav-link px-2 shivam-border-color navbar-link"
-             (click)="navigateUrl('achievement', $event)" href="#achievement">Achievement</a></li>
+              (click)="navigateUrl('timeline', $event)" href="#timeline">Timeline</a> </li>
           <li type="button" class="nav-item"><a class="nav-link px-2 shivam-border-color navbar-link"
-             (click)="navigateUrl('contact', $event)" href="#contact">Contact</a></li>
+              (click)="navigateUrl('hobbies', $event)" href="#hobbies">Hobbies</a></li>
+          <li type="button" class="nav-item"><a class="nav-link px-2 shivam-border-color navbar-link"
+              (click)="navigateUrl('other-skills', $event)" href="#other-skills">Other Skills</a></li>
+          <li type="button" class="nav-item"><a class="nav-link px-2 shivam-border-color navbar-link"
+              (click)="navigateUrl('contact', $event)" href="#contact">Contact</a></li>
         </ul>
       </div>
     </nav>
@@ -49,14 +56,26 @@
     <body data-spy="scroll" data-target="#navbar-desktop" data-offset="100" tabindex="0"
       class='col-md-12 col-lg-10 col-xl-10 col-sm-12 nav-body'>
       <div class='my-3'>
+        <app-title-bar id="skills" data='SKILLS'></app-title-bar>
+        <app-skill></app-skill>
+       <!-- To be Deprecated -->
+        <app-dropdown-combo [data]="dropDownData"></app-dropdown-combo>
+        <app-title-bar id="achievement" data='ACHIEVEMENTS'></app-title-bar>
+        <app-achievement></app-achievement>
         <app-title-bar id="timeline" data='TIMELINE'></app-title-bar>
         <app-timeline></app-timeline>
         <app-title-bar id="hobbies" data='HOBBIES'></app-title-bar>
         <app-list-accordion [data]="data"></app-list-accordion>
-        <app-title-bar id="achievement" data='ACHIEVEMENT'></app-title-bar>
+        <app-title-bar id="other-activity" data='OTHER ACTIVITY'></app-title-bar>
         <app-corousel></app-corousel>
-        <app-title-bar id="contact" data='CONTACT'></app-title-bar>
+        <app-title-bar id="contact" data='CONTACTS'></app-title-bar>
         <app-horz-tab></app-horz-tab>
+        <div class="d-flex justify-content-center align-items-center flex-column my-4">
+          <a [routerLink]="['/']">
+            <button type="button" class="btn btn-primary btn-lg shivam-bg">Back to Home
+              Page</button>
+          </a>
+        </div>
       </div>
     </body>
   </div>

@@ -1,16 +1,11 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-title-bar',
   templateUrl: './title-bar.component.html',
   styleUrls: ['./title-bar.component.scss']
 })
-export class TitleBarComponent implements OnInit {
-
-  constructor() { }
+export class TitleBarComponent {
   @Input() data: string;
   @Input() id?: string;
-  ngOnInit(): void {
-  }
-
 }

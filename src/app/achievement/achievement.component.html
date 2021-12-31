@@ -1,0 +1,24 @@
+<div class="wrapper shivam-border-color ml-3">
+    <ng-container *ngFor="let achievement of data; let i=index;">
+        <div class="shivam-border-color content-wrapper d-flex justify-content-between p-4 flex-wrap">
+            <div class="d-flex">
+                <span class="index mr-2">
+                    {{i+1}}.
+                </span>
+                <span [innerHTML]="achievement.title"></span>
+            </div>
+            <div class="d-flex flex-wrap">
+                <ng-container *ngFor="let button of data[i].button; let i=index;">
+                    <span class="link-button mx-1 shivam-border-color" [title]="button.buttoneUrl">
+                        <a target="_blank" [href]="button.buttoneUrl"
+                            class="text-decoration-none d-flex align-items-center">
+                            <span class="btn">{{button.buttonText}}</span>
+                            <img [src]="button.buttonImage.imageUrl" [alt]="button.buttonImage.altText"
+                                [attr.height]="button.buttonImage.height" />
+                        </a>
+                    </span>
+                </ng-container>
+            </div>
+        </div>
+    </ng-container>
+</div>
