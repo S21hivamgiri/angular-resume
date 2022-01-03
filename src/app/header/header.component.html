@@ -5,4 +5,9 @@
   <p class="title-font shivam-color font-weight-bold px-5 pt-3 m-0" [innerHTML]="aboutData.objectiveText"></p>
   <app-band></app-band>
   <app-connect></app-connect>
+  <div class="d-flex justify-content-center">
+    <a [routerLink]="['/blog']">
+      <button type="button" class="btn btn-primary btn-lg shivam-bg">Jump to Blog</button>
+    </a>
+  </div>
 </div>
