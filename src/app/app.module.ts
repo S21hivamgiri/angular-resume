@@ -25,6 +25,8 @@ import { SkillComponent } from './skill/skill.component';
 import { HeaderIconComponent } from './header-icon/header-icon.component';
 import { TitleSvgComponent } from './title-svg/title-svg.component';
 import { AchievementComponent } from './achievement/achievement.component';
+import { BlogComponent } from './blog/blog.component';
+import { ConnectComponent } from './connect/connect.component';
 
 @NgModule({
   declarations: [
@@ -50,7 +52,9 @@ import { AchievementComponent } from './achievement/achievement.component';
     SkillComponent,
     HeaderIconComponent,
     TitleSvgComponent,
-    AchievementComponent
+    AchievementComponent,
+    BlogComponent,
+    ConnectComponent
   ],
   imports: [
     BrowserModule,
