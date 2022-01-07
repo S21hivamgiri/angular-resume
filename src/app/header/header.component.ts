@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { ABOUT_DATA } from '../data';
 
 @Component({
@@ -6,7 +6,10 @@ import { ABOUT_DATA } from '../data';
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.scss']
 })
-export class HeaderComponent {
-  constructor() {}
-  aboutData=ABOUT_DATA;
+export class HeaderComponent implements OnInit {
+  aboutData = ABOUT_DATA;
+  
+  ngOnInit(): void {
+    window.scrollTo(0, 0)
+  }
 }

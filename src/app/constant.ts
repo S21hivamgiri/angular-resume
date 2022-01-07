@@ -76,7 +76,7 @@ export interface Objective {
 
 export interface Achievement {
     title: string;
-    button?:Button[];
+    button?: Button[];
 }
 
 export interface Timeline {
