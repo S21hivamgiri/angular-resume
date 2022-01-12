@@ -1,6 +1,6 @@
 <app-home-look></app-home-look>
-<div class="blogs p-5 container">
-    <app-title-bar id="welcome" data='WELCOME TO MY BLOG'></app-title-bar>
+<div class="blogs p-2 container">
+    <app-title-bar id="welcome" data='WELCOME TO MY INSTA FEED'></app-title-bar>
     <div class="collapse-blogs" id="1">
         <button class="btn collapsing-button w-100" type="button" data-toggle="collapse" data-target="#collapse-1"
             aria-expanded="false" aria-controls="collapse-1">
@@ -43,11 +43,13 @@
             <div class="card card-body">
                 <span class="d-flex px-2 py-3">Open Instagram Link here. &nbsp;
                     <a href="https://www.instagram.com/p/CYZKPShBJhv/" target="_blank">
+                        <img src="/assets/instagram-logo.svg" height="30px" />
                     </a>
-                    <img src="/assets/instagram-logo.svg" height="30px" />
                 </span>
-                <span class="d-flex p-2">The final Output is <b class="shivam-color">&nbsp; 81</b>. Full Video
-                    Description is here.
+                <span class="d-block p-2 highlight p-2 my-1">The final Output is 
+                    <b class="shivam-color">&nbsp; 81</b>
+                    <span>.</span>
+                    Full Video Description is here.
                 </span>
                 <div class="embed-responsive embed-responsive-16by9">
                     <iframe class="embed-responsive-item" width="100%" height="100%"
@@ -59,6 +61,70 @@
             </div>
         </div>
     </div>
+
+    <div class="collapse-blogs" id="3">
+        <button class="btn collapsing-button w-100" type="button" data-toggle="collapse" data-target="#collapse-3"
+            aria-expanded="false" aria-controls="collapse-3">
+            #3 THIS KEYWORD
+        </button>
+        <div class="collapse" id="collapse-3">
+            <div class="card card-body">
+                <span class="d-flex  px-2 py-3">Open Instagram Link here. &nbsp;
+                    <a href="https://www.instagram.com/p/CYgMDqKBZR7/" target="_blank">
+                        <img src="/assets/instagram-logo.svg" height="30px" />
+                    </a>
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <div class="collapse-blogs" id="4">
+        <button class="btn collapsing-button w-100" type="button" data-toggle="collapse" data-target="#collapse-4"
+            aria-expanded="false" aria-controls="collapse-4">
+            #4 GUESS THE OUTPUT
+        </button>
+        <div class="collapse" id="collapse-4">
+            <div class="card card-body">
+                <span class="d-flex px-2 py-3">Open Instagram Link here. &nbsp;
+                    <a href="https://www.instagram.com/p/CYnow5_h8XY/" target="_blank">
+                        <img src="/assets/instagram-logo.svg" height="30px" />
+                    </a>
+                </span>
+                <span class="d-block p-2 highlight py-2 px-4 my-1">The final Output is <b
+                        class="shivam-color">&nbsp;
+                        Buddy Buddy</b><span>.</span> Full Description is here:
+                    <br>
+                </span>
+                <span class="describe px-2">
+                    Since the Object "account" is referenced instead of deep copying, it stores the memory location of
+                    the
+                    Object "account" in both the index of the Array "accounts".
+                    So when the modification of any one of the Object happens both the elements of Array "accounts" is
+                    updated as both references to same memory location.
+                </span>
+                <span class="d-block p-2">In case we need to deep copy, and expect output as
+                    <span class="shivam-color font-weight-bold fs-6">&nbsp;FrontEnd Buddy </span>
+                    <span> ,&nbsp;</span>
+                    we need to modify our code as below:
+                </span>
+                <div class="code">
+                    const account = {{ '{' }}<br>
+                    &nbsp;&nbsp;&nbsp; name: 'FrontEnd',<br>
+                    &nbsp;&nbsp;&nbsp; tag: 'Follow me on Insta',<br>
+                    &nbsp;&nbsp;&nbsp; description: 'Help Learner to explore JS'<br>
+                    };<br>
+                    <br>
+                    const accounts = [{{ '{' }}...account}, {{ '{' }}...account}];
+                    <span class="comment">// Changed here to deep copying</span> <br>
+                    <span class="comment">//as earlier it was [account, account] which shallow copies object
+                        account</span><br>
+                    accounts[1].name = 'Buddy';<br>
+                    console.log(accounts[0].name +' '+ accounts[1].name);<br>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </div>
 
 <div class="mx-5">

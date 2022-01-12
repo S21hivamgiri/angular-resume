@@ -1,3 +1,21 @@
 .collapsing-button {
     border: 1px solid black;
 }
+
+.code {
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    padding: 20px;
+    font-sizE: 13px;
+
+    .comment {
+        color: #50b200
+    }
+}
+
+.highlight {
+    background-color: yellowgreen;
+    border-radius: 99em;
+}
