@@ -7,7 +7,7 @@ import { SideJumpMenuComponent } from './side-jump-menu/side-jump-menu.component
 const routes: Routes = [
   { path: '', component: HeaderComponent },
   { path: 'main', component: SideJumpMenuComponent },
-  { path: 'blog', component: BlogComponent },
+  { path: 'instafeed', component: BlogComponent },
   { path: '**', component: HeaderComponent }
 ];
 

@@ -1,7 +1,7 @@
 <div class="container mb-5">
   <div class='row pt-2 px-1'>
-    <nav id="navbar-desktop" *ngIf="!(isMobile)" class="navbar-light navbar-inverse navbar-fixed-top list-group list-group-flush 
-        col-lg-2 col-xl-2 d-none d-xl-block d-lg-block">
+    <nav id="navbar-desktop" *ngIf="!(isMobile)"
+      class="navbar-light navbar-inverse navbar-fixed-top list-group list-group-flush col-lg-2 col-xl-2 d-none d-xl-block d-lg-block">
       <div class="sticky-top z-index-3 col-12">
         <ul class="nav nav-pills">
           <li class="w-100">
@@ -46,7 +46,7 @@
           <li type="button" class="nav-item"><a class="nav-link px-2 shivam-border-color navbar-link"
               (click)="navigateUrl('hobbies', $event)" href="#hobbies">Hobbies</a></li>
           <li type="button" class="nav-item"><a class="nav-link px-2 shivam-border-color navbar-link"
-              (click)="navigateUrl('other-skills', $event)" href="#other-skills">Other Skills</a></li>
+              (click)="navigateUrl('other-activity', $event)" href="#other-activity">Other Activities</a></li>
           <li type="button" class="nav-item"><a class="nav-link px-2 shivam-border-color navbar-link"
               (click)="navigateUrl('contact', $event)" href="#contact">Contact</a></li>
         </ul>
@@ -58,7 +58,7 @@
       <div class='my-3'>
         <app-title-bar id="skills" data='SKILLS'></app-title-bar>
         <app-skill></app-skill>
-       <!-- To be Deprecated -->
+        <!-- To be Deprecated -->
         <app-dropdown-combo [data]="dropDownData"></app-dropdown-combo>
         <app-title-bar id="achievement" data='ACHIEVEMENTS'></app-title-bar>
         <app-achievement></app-achievement>
